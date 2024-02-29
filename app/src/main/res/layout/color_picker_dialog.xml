@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageButton
+        android:id="@+id/ibBlueColor"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ibUsafaBlue"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/USAFA_Blue"
+        app:layout_constraintStart_toEndOf="@id/ibBlueColor"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ibDarkCerulean"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/Dark_Cerulean"
+        app:layout_constraintStart_toEndOf="@id/ibUsafaBlue"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ibCatalinaBlue"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/Catalina_Blue"
+        app:layout_constraintStart_toEndOf="@id/ibDarkCerulean"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ibLightBlue"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/light_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ibBlueColor" />
+
+    <ImageButton
+        android:id="@+id/ibMediumTurqoise"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/MediumTurquoise"
+        app:layout_constraintStart_toEndOf="@id/ibLightBlue"
+        app:layout_constraintTop_toBottomOf="@id/ibBlueColor" />
+
+    <ImageButton
+        android:id="@+id/ibSkyBlue"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/SkyBlue"
+        app:layout_constraintStart_toEndOf="@id/ibMediumTurqoise"
+        app:layout_constraintTop_toBottomOf="@id/ibBlueColor" />
+
+    <ImageButton
+        android:id="@+id/ibLightSkyBlue"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/LightSkyBlue"
+        app:layout_constraintStart_toEndOf="@id/ibSkyBlue"
+        app:layout_constraintTop_toBottomOf="@id/ibBlueColor" />
+
+    <ImageButton
+        android:id="@+id/ibPurple"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/purple"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ibLightBlue" />
+
+    <ImageButton
+        android:id="@+id/ibPalatinatePurple"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/Palatinate_Purple"
+        app:layout_constraintStart_toEndOf="@id/ibPurple"
+        app:layout_constraintTop_toBottomOf="@id/ibLightBlue" />
+
+    <ImageButton
+        android:id="@+id/ibCadmiumViolet"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/Cadmium_Violet"
+        app:layout_constraintStart_toEndOf="@id/ibPalatinatePurple"
+        app:layout_constraintTop_toBottomOf="@id/ibLightBlue" />
+
+    <ImageButton
+        android:id="@+id/ibPearlyPurple"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/Pearly_Purple"
+        app:layout_constraintStart_toEndOf="@id/ibCadmiumViolet"
+        app:layout_constraintTop_toBottomOf="@id/ibLightBlue" />
+
+    <ImageButton
+        android:id="@+id/ibDarkPink"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/dark_pink"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ibPurple" />
+
+    <ImageButton
+        android:id="@+id/ibMagentaPink"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/Magenta_Pink"
+        app:layout_constraintStart_toEndOf="@id/ibDarkPink"
+        app:layout_constraintTop_toBottomOf="@id/ibPurple" />
+
+    <ImageButton
+        android:id="@+id/ibPantonePink"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/Pantone_Pink"
+        app:layout_constraintStart_toEndOf="@id/ibMagentaPink"
+        app:layout_constraintTop_toBottomOf="@id/ibPurple" />
+
+    <ImageButton
+        android:id="@+id/ibChinaPink"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/China_pink"
+        app:layout_constraintStart_toEndOf="@id/ibPantonePink"
+        app:layout_constraintTop_toBottomOf="@id/ibPurple" />
+
+    <ImageButton
+        android:id="@+id/ibTicklePink"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/Tickle_me_pink"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ibDarkPink" />
+
+    <ImageButton
+        android:id="@+id/ibPastelMagenta"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/Pastel_magenta"
+        app:layout_constraintStart_toEndOf="@id/ibTicklePink"
+        app:layout_constraintTop_toBottomOf="@id/ibDarkPink" />
+
+    <ImageButton
+        android:id="@+id/ibLightHotPink"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/Light_hot_pink"
+        app:layout_constraintStart_toEndOf="@id/ibPastelMagenta"
+        app:layout_constraintTop_toBottomOf="@id/ibDarkPink" />
+
+    <ImageButton
+        android:id="@+id/ibClassicRose"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/Classic_Rose"
+        app:layout_constraintStart_toEndOf="@id/ibLightHotPink"
+        app:layout_constraintTop_toBottomOf="@id/ibDarkPink" />
+
+
+    <ImageButton
+        android:id="@+id/ibYellow"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/yellow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ibTicklePink" />
+
+
+    <ImageButton
+        android:id="@+id/ibOrangeYellow"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/Orange_yellow"
+        app:layout_constraintStart_toEndOf="@id/ibYellow"
+        app:layout_constraintTop_toBottomOf="@id/ibTicklePink" />
+
+    <ImageButton
+        android:id="@+id/ibSunglow"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/Sunglow"
+        app:layout_constraintStart_toEndOf="@id/ibOrangeYellow"
+        app:layout_constraintTop_toBottomOf="@id/ibTicklePink" />
+
+    <ImageButton
+        android:id="@+id/ibDandelion"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/Dandelion"
+        app:layout_constraintStart_toEndOf="@id/ibSunglow"
+        app:layout_constraintTop_toBottomOf="@id/ibTicklePink" />
+
+    <ImageButton
+        android:id="@+id/ibGreen"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ibYellow" />
+
+    <ImageButton
+        android:id="@+id/ibLimeGreen"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/LimeGreen"
+        app:layout_constraintStart_toEndOf="@id/ibGreen"
+        app:layout_constraintTop_toBottomOf="@id/ibYellow" />
+
+    <ImageButton
+        android:id="@+id/ibSpringFrost"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/Spring_frost"
+        app:layout_constraintStart_toEndOf="@id/ibLimeGreen"
+        app:layout_constraintTop_toBottomOf="@id/ibYellow" />
+
+    <ImageButton
+        android:id="@+id/ibTeaGreen"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/TeaGreen"
+        app:layout_constraintStart_toEndOf="@id/ibSpringFrost"
+        app:layout_constraintTop_toBottomOf="@id/ibYellow" />
+
+    <ImageButton
+        android:id="@+id/ibRed"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/red"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ibGreen" />
+
+    <ImageButton
+        android:id="@+id/ibPigmentRed"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/Pigment_red"
+        app:layout_constraintStart_toEndOf="@id/ibRed"
+        app:layout_constraintTop_toBottomOf="@id/ibGreen" />
+
+    <ImageButton
+        android:id="@+id/ibFireRed"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/Fire_red"
+        app:layout_constraintStart_toEndOf="@id/ibPigmentRed"
+        app:layout_constraintTop_toBottomOf="@id/ibGreen" />
+
+    <ImageButton
+        android:id="@+id/ibDarkRed"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/Dark_red"
+        app:layout_constraintStart_toEndOf="@id/ibFireRed"
+        app:layout_constraintTop_toBottomOf="@id/ibGreen" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

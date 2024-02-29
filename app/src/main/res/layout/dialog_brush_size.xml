@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="0dp"
+    android:background="@null"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/ib_small_brush"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/small_brush_size"
+        android:contentDescription="@string/app_name"
+        android:padding="12dp"
+        android:background="@null"
+        tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:id="@+id/ib_medium_brush"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/medium_brush_size"
+        android:contentDescription="@string/app_name"
+        android:padding="12dp"
+        android:background="@null"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/ib_large_brush"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/large_brush_size"
+        android:contentDescription="@string/app_name"
+        android:padding="12dp"
+        android:background="@null" />
+
+    <ImageButton
+        android:id="@+id/ib_extra_large_brush"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/extra_large_brush_size"
+        android:contentDescription="@string/app_name"
+        android:padding="12dp"
+        android:background="@null" />
+
+</LinearLayout>

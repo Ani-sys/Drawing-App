@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_drawing_view_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/background_drawing_view_layout"
+        app:layout_constraintBottom_toTopOf="@id/vBrush"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vLine">
+
+
+        <com.example.drawingapp.DrawingView
+            android:id="@+id/drawing_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="11dp"
+        android:fontFamily="@font/roboto"
+        android:hint="Project Title"
+        android:textColorHint="@color/hint_color"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Title"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/vDone"
+        android:layout_width="81dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/button_background"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDone"
+        android:layout_width="33dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:fontFamily="@font/roboto"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/vDone"
+        app:layout_constraintTop_toTopOf="@id/vDone" />
+
+    <View
+        android:id="@+id/vLine"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="3dp"
+        android:background="@drawable/line_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/vBrush"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginBottom="113dp"
+        android:background="@drawable/brush"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/vImageShare"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginBottom="113dp"
+        android:background="@drawable/share_icon"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/vBrush" />
+
+    <ImageView
+        android:id="@+id/vImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginBottom="113dp"
+        android:background="@drawable/image"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/vImageShare" />
+
+    <View
+        android:id="@+id/vEllipse"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginBottom="113dp"
+        android:background="@drawable/elilipse_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/vImage" />
+
+    <View
+        android:id="@+id/vUndo"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:background="@drawable/majesticons_undo_line"
+        app:layout_constraintBottom_toBottomOf="@id/vEllipse"
+        app:layout_constraintEnd_toEndOf="@id/vEllipse"
+        app:layout_constraintStart_toStartOf="@id/vEllipse"
+        app:layout_constraintTop_toTopOf="@id/vEllipse" />
+
+    <View
+        android:id="@+id/vRedoEllipse"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginBottom="113dp"
+        android:background="@drawable/elilipse_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/vEllipse" />
+
+    <View
+        android:id="@+id/vRedo"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:background="@drawable/majesticons_undo_line"
+        android:rotationY="180"
+        android:clickable="true"
+        android:contentDescription="Redo_Button"
+        app:layout_constraintBottom_toBottomOf="@id/vRedoEllipse"
+        app:layout_constraintEnd_toEndOf="@id/vRedoEllipse"
+        app:layout_constraintStart_toStartOf="@id/vRedoEllipse"
+        app:layout_constraintTop_toTopOf="@id/vRedoEllipse" />
+
+    <HorizontalScrollView
+        android:layout_width="368dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <FrameLayout
+            android:id="@+id/flPaintColorsContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/llPaintColors"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="visible"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/vColors"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/color_palette__1_" />
+
+            <View
+                android:id="@+id/vLineForColors"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/line_for_colors" />
+
+            <ImageButton
+                android:id="@+id/vBlue"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="17dp"
+                android:background="@color/blue"
+                android:clickable="true" />
+
+            <ImageButton
+                android:id="@+id/LightBlue"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="12dp"
+                android:background="@color/light_blue" />
+
+            <ImageButton
+                android:id="@+id/Purple"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="12dp"
+                android:background="@color/purple" />
+
+            <ImageButton
+                android:id="@+id/DarkPink"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="12dp"
+                android:background="@color/dark_pink" />
+
+            <ImageButton
+                android:id="@+id/vPink"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="12dp"
+                android:background="@color/pink" />
+
+            <ImageButton
+                android:id="@+id/vYellow"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="12dp"
+                android:background="@color/yellow" />
+
+            <ImageButton
+                android:id="@+id/vGreen"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="12dp"
+                android:background="@color/green" />
+
+            <ImageButton
+                android:id="@+id/vRed"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="12dp"
+                android:background="@color/red" />
+
+
+        </LinearLayout>
+
+        </FrameLayout>
+    </HorizontalScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

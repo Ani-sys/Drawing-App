@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="btn_color">#1C1C1C</color>
+    <color name="edit_text_error_color">#E91634</color>
+    <color name="hint_color">#9A9C99</color>
+    <color name="blue">#0778CA</color>
+    <color name="dark_pink">#CB3071</color>
+    <color name="green">#2CB852</color>
+    <color name="light_blue">#00B2BD</color>
+    <color name="pink">#B280BE</color>
+    <color name="purple">#5C0EBF</color>
+    <color name="red">#FD3F3F</color>
+    <color name="yellow">#FFBF00</color>
+    <color name="grey">#80FFFFFF</color>
+    <color name="USAFA_Blue">#034EA1</color>
+    <color name="Dark_Cerulean">#043A79</color>
+    <color name="Catalina_Blue">#06257E</color>
+    <color name="SkyBlue">#87CEEB</color>
+    <color name="MediumTurquoise">#48D1CC</color>
+    <color name="LightSkyBlue">#87CEFA</color>
+    <color name="Palatinate_Purple">#641665</color>
+    <color name="Cadmium_Violet">#8D3291</color>
+    <color name="Pearly_Purple">#B164B6</color>
+    <color name="Magenta_Pink">#C63287</color>
+    <color name="Pantone_Pink">#D44C9C</color>
+    <color name="China_pink">#E366B1</color>
+    <color name="Tickle_me_pink">#F385B0</color>
+    <color name="Pastel_magenta">#F69FC4</color>
+    <color name="Light_hot_pink">#FBB6DB</color>
+    <color name="Classic_Rose">#FFCBDC</color>
+    <color name="Orange_yellow">#FDB725</color>
+    <color name="Sunglow">#FDC934</color>
+    <color name="Dandelion">#FED674</color>
+    <color name="LimeGreen">#29CE1F</color>
+    <color name="Spring_frost">#7EFC28</color>
+    <color name="TeaGreen">#88FF99</color>
+    <color name="Pigment_red">#F22727</color>
+    <color name="Fire_red">#C92020</color>
+    <color name="Dark_red">#8B0001</color>
+    <color name="light_grey">#D3D3D3</color>
+    <color name="Philippine_silver">#7D7D7D</color>
+
+</resources>
